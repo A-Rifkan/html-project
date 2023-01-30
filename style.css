@@ -5,6 +5,24 @@ Colours I will use :
 #FFFFFF
 #698499 - Blueish grey
 */
+body{
+    background-color: #4AADFE;
+    font-family: 'Work Sans' ;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+
+}
+a:active{
+    color: black;
+}
+a:hover{
+    color: white;
+}
 nav{
     display: flex;
     justify-content: space-evenly;
@@ -14,7 +32,6 @@ nav{
     background-color: #698499;
     width: 33%;
     text-align: center;
-    border-radius: 15px;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -25,8 +42,11 @@ header{
     text-align: center;
     padding: 5rem;
     background-image: linear-gradient(white, #4AADFE);
+    font-size: xx-large;
 }
-
+#mini-header{
+    font-weight: 100;
+}
 /* Screen for phones */
 @media screen and (max-width: 600px){
     nav {
