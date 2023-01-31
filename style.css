@@ -5,8 +5,14 @@ Colours I will use :
 #FFFFFF
 #698499 - Blueish grey
 */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: #4AADFE;
+    background-image: url(/img/niclas-illg-wzVQp_NRIHg-unsplash.jpg);
+    background-size: cover;
     font-family: 'Work Sans' ;
 }
 a{
@@ -26,14 +32,19 @@ a:hover{
 nav{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 0.5rem;
 }
 /* Class for each item in the navigaion bar */
 .navitems{
-    background-color: #698499;
+    background-color: #9da6ad;
     width: 33%;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border: 0.5rem;
+    border-style: solid;
+    border-color: black;
+    opacity: 80%;
 }
 
 header{
@@ -41,11 +52,27 @@ header{
     flex-direction: column;
     text-align: center;
     padding: 5rem;
-    background-image: linear-gradient(white, #4AADFE);
+    background-color: #77c2ff;
     font-size: xx-large;
+    opacity: 70%;
+    border: 1rem;
+    border-style: solid;
+    border-color: black;
 }
 #mini-header{
     font-weight: 100;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    border: 0.4rem;
+    border-style: solid;
+    border-color: black;
+    background-color:#9da6ad;
+    gap: 50px;
+    opacity: 80%;
 }
 /* Screen for phones */
 @media screen and (max-width: 600px){
@@ -55,7 +82,6 @@ header{
         align-items: center;
     }
     .navitems{
-        background-color: #698499;
         width: 100%;
     }
 }
