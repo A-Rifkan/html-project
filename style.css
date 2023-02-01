@@ -11,7 +11,7 @@ Colours I will use :
     box-sizing: border-box;
 }
 body{
-    background-image: url(/img/niclas-illg-wzVQp_NRIHg-unsplash.jpg);
+    background-image: url(img/niclas-illg-wzVQp_NRIHg-unsplash.jpg);
     background-size: cover;
     font-family: 'Work Sans' ;
 }
@@ -83,6 +83,10 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 600px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+
 }
 .container {
     position: relative;
@@ -114,14 +118,26 @@ img{
     -ms-transform: translate(-50%, -50%);
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
 /* Screen for phones */
-@media screen and (max-width: 600px){
+@media(max-width: 900px) and (orientation: portrait){
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .navitems{
+        width: 100%;
+    }
+    img{
         width: 100%;
     }
 }
